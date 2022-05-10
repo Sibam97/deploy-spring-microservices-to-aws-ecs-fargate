@@ -7,14 +7,14 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HelloWorldController {
 
-	@GetMapping(path = "/hello-world")
+	@GetMapping(path = "/hello")
 	public String helloWorld() {
-		return "Hello World";
+		return "Hello Sibam";
 	}
 
 	@GetMapping(path = "/hello-world-bean")
 	public HelloWorldBean helloWorldBean() {
-		return new HelloWorldBean("Hello World - Changed");
+		return new HelloWorldBean("Hello - welcome to AWS, have fun learning!!! ");
 	}
 	
 	@GetMapping(path = "/hello-world/path-variable/{name}")
